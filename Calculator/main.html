@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" class="calculator-screen" id="expression-screen" value="" disabled />
+        <input type="text" class="calculator-screen" id="result-screen" value="0" disabled />
+        <div class="calculator-keys">
+        <table border="1">
+        <tr cellpadding="1" align="center">
+            <td><button type="button" value="(">(</button></td>
+            <td><button type="button" value=")">)</button></td>
+            <td><button type="button" id="ans">ans</button></td>
+            <td><button type="button" id="del"><=</button></td>
+            <td><button type="button" class="all-clear" value="all-clear">AC</button></td>
+        </tr>
+
+        <tr cellpadding="1" align="center">
+            <td><button type="button" value="7">7</button></td>
+            <td><button type="button" value="8">8</button></td>
+            <td><button type="button" value="9">9</button></td>
+            <td><button type="button" value="%">%</button></td>
+            <td><button type="button" value="sqrt">&radic;</button></td>
+        </tr>
+
+        <tr cellpadding="1" align="center">
+            <td><button type="button" value="4">4</button></td>
+            <td><button type="button" value="5">5</button></td>
+            <td><button type="button" value="6">6</button></td>
+            <td><button type="button" class="operator" value="*">&times;</button></td>
+            <td><button type="button" class="operator" value="/">&divide;</button></td>
+        </tr>
+
+        <tr cellpadding="1" align="center">
+            <td><button type="button" value="1">1</button></td>
+            <td><button type="button" value="2">2</button</td>
+            <td><button type="button" value="3">3</button></td>
+            <td><button type="button" class="operator" value="+">+</button></td>
+            <td><button type="button" class="operator" value="-">-</button></td>
+        </tr>
+
+        <tr cellpadding="1" align="center">
+            <td><button type="button" value=".">.</button></td>
+            <td><button type="button" value="0">0</button></td>
+            <td><button type="button" value="(">(</button></td>
+            <td><button type="button" value=")">)</button></td>
+            <td><button type="button" class="equal-sign" value="=">=</button></td>
+        </tr>
+        </table>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
